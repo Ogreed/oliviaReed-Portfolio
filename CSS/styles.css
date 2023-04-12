@@ -9,7 +9,9 @@
 
     font-family: 'Merriweather', serif;
 
-    font-family: 'Sacramento', cursive;
+    font-family: 'Sacramento', cursive; - NOT REALLY USING ATM
+
+    font-family: 'Handlee', cursive;
  */
 
 * {
@@ -18,9 +20,17 @@
     cursor: url('../images/daisyDarker.png'), auto;
 }
 
-body {
-    background-image: linear-gradient(to bottom right, rgb(224, 209, 247), rgb(205, 178, 245), rgb(250, 247, 254), rgb(204, 177, 245), rgb(224, 209, 247), rgb(246, 240, 255));
-    background-color: rgb(249, 245, 255);
+a, a img {
+    cursor: url('../images/daisyPink.png'), auto;
+}
+
+body {    
+    background-image: linear-gradient(to bottom right, rgb(247, 209, 243), rgb(246, 202, 255), rgb(254, 247, 252), rgb(251, 213, 255), rgb(250, 214, 255), rgb(253, 240, 255));
+    background-color: rgb(255, 245, 255);
+}
+
+p {
+    color: black;
 }
 
 #bubbles {
@@ -36,12 +46,12 @@ header {
     color: rgb(0, 0, 0);
 }
 
-h1, h2, h3, .portfolioWorkSection, .projectTitle {
-    font-family: 'Sacramento', cursive;
+h1, h2, h3, .portfolioWorkSection, .projectTitle, .servicesTitle {
+    font-family: 'Handlee', cursive;
     text-align: center;
 }
 
-.portfolioWorkSection {
+.portfolioWorkSection, .servicesTitle {
     font-size: 4em;
     font-family: 'Merriweather', serif;
 }
@@ -56,8 +66,8 @@ h1, h2, h3, .portfolioWorkSection, .projectTitle {
 }
 
 #name h1 a {
-    font-family: 'Sacramento', cursive;
-    color: black;
+    font-family: 'Handlee', cursive;
+    color: rgb(35, 2, 27);
     text-decoration: none;
 }
 
@@ -69,7 +79,7 @@ h1, h2, h3, .portfolioWorkSection, .projectTitle {
 .pageHeader {
     font-size: 4.5em;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color:rgb(35, 2, 27);
 }
 
 #nav a:hover {
@@ -78,14 +88,14 @@ h1, h2, h3, .portfolioWorkSection, .projectTitle {
 }
 
 #nav {
-    border-bottom: 1px solid black;
-    font-family: 'Sacramento', cursive;
+    border-bottom: 1px solid rgb(35, 2, 27);
+    font-family: 'Handlee', cursive;
     background-color: rgb(254, 255, 180);
     padding: 1.5%;
   }
 
 #nav a {
-    font-family: 'Sacramento', cursive;
+    font-family: 'Handlee', cursive;
     color: rgb(25, 39, 16);
     font-size: 4.5em;
     text-decoration: none;
@@ -135,8 +145,8 @@ h1, h2, h3, .portfolioWorkSection, .projectTitle {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
+    width: 500px;
     padding: 0;
     border-radius: 50%;
 }
@@ -147,8 +157,8 @@ h1, h2, h3, .portfolioWorkSection, .projectTitle {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
+    width: 550px;
     padding: 0;
 }
 
@@ -177,6 +187,14 @@ main {
 .CTA {
     text-align: center;
     font-size: 1.8em;
+}
+
+#aboutMeVideo {
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 4% 0%;
 }
 
 #resume {
@@ -208,6 +226,36 @@ footer {
     padding: 0.5%;
 }
 
+.contactForm {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#emf_advertisement {
+    opacity: 50%;
+}
+
+.iconLine {
+    margin: 0 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.iconLine #img1 {
+    margin: 2%;
+    max-width: 100%;
+    width: 150px;
+}
+
+.iconLine #img2 {
+    margin: 2%;
+    max-width: 100%;
+    width: 200px;
+}
+
 #contactIcons {
     text-align: center;
 }
@@ -224,8 +272,8 @@ footer {
     padding: 1.3%;
     background-color: rgb(254, 255, 180);
     border-radius: 45%;
-    color: rgb(75, 52, 110);
-    text-shadow: 2px 2px 22px rgba(191, 154, 248, 0.626);
+    color: rgb(35, 2, 27);
+    text-shadow: 2px 2px 22px rgba(62, 5, 50, 0.556);
     text-decoration: none;
     font-weight: bold;
     text-align: center;
@@ -234,7 +282,7 @@ footer {
 .button:hover {
     padding: 1.7%;
     border-radius: 0%;
-    color: rgb(34, 16, 61);
+    color: rgb(15, 1, 11);
     background-color: rgb(253, 254, 202);
     transition: 0.3s;
 }
@@ -251,11 +299,25 @@ footer {
     align-items: center;
 }
 
-.portfolioWorkImg {
-    max-height: 700px;
-    max-width: 100%;
+.portfolioWorkImgWebDesign, .portfolioWorkImgMPS, .portfolioWorkImgGraphicDesign {
     grid-column: 1/2;
 }
+
+.portfolioWorkImgWebDesign {
+    width: 550px;
+    max-width: 100%;
+}
+
+.portfolioWorkImgMPS {
+    height: 500px;
+    max-width: 100%;
+}
+
+.portfolioWorkImgGraphicDesign {
+    width: 550px;
+    max-width: 100%;
+}
+
 
 .portfolioWorkImg:hover {
     opacity: 50%;
@@ -337,7 +399,7 @@ footer {
         font-size: 3em;
     }
 
-    .portfolioWorkSection {
+    .portfolioWorkSection, .servicesTitle {
         font-size: 2.5em;
     }
 
@@ -375,7 +437,6 @@ footer {
 
     .portfolioWork {
         display: block;
-        
     }
 
 }
@@ -395,6 +456,35 @@ footer {
     #homeMain {
         display: block;
         margin: 2%;
+    }
+
+    .pageHeader {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .iconLine {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .iconLine #img1 {
+        margin: 2%;
+        max-width: 100%;
+        width: 130px;
+    }
+    
+    .iconLine #img2 {
+        margin: 2%;
+        max-width: 100%;
+        width: 180px;
+    }
+    
+    .pageHeader {
+        font-size: 3.1em;
     }
 
 }
@@ -420,6 +510,28 @@ footer {
         font-size: 1.2em;
     }
 
+    .lCornerArt {
+        max-width: 100%;
+        width: 90px;
+    }
+    
+    .rCornerArt {
+        max-width: 100%;
+        width: 90px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .lCornerArt {
+        max-width: 100%;
+        width: 80px;
+    }
+    
+    .rCornerArt {
+        max-width: 100%;
+        width: 80px;
+    }
 }
 
 
@@ -462,15 +574,56 @@ footer {
         font-size: 0.8em;
     }
 
+    .servicesTitle {
+        font-size: 2em;
+    }
+
+    .iconLine #img1 {
+        margin: 2%;
+        max-width: 100%;
+        width: 100px;
+    }
+    
+    .iconLine #img2 {
+        margin: 2%;
+        max-width: 100%;
+        width: 150px;
+    }
+
+    .pageHeader {
+        font-size: 2.5em;
+    }
+
 }
 
 @media screen and (max-width: 330px) {
+
+    .lCornerArt {
+        max-width: 100%;
+        width: 70px;
+    }
+    
+    .rCornerArt {
+        max-width: 100%;
+        width: 70px;
+    }
+
     .button { 
         font-size: 0.6em;
     }
+
+    .centerArt {
+        max-width: 100%;
+        width: 240px;
+    }
+
 }
 
 @media screen and (max-width: 317px) {
+
+    .pageHeader {
+        font-size: 2.3em;
+    }
 
     #homeH3 {
         font-size: 2em;
